@@ -2,7 +2,8 @@ header {
   top: 0;
   display: flex;
   width: 100%;
-  align-items: bottom;
   justify-content: center;
-  padding: 4.8rem 8rem 0 8rem;
+  align-items: bottom;
+  padding: $spacing-600 $spacing-1000 0 $spacing-1000;
+  background-color: $color-white;
 }

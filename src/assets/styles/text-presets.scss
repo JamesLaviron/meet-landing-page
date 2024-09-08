@@ -39,3 +39,10 @@
   line-height: 110%;
   letter-spacing: 0;
 }
+
+@mixin text-preset-5 {
+  @include barlow-semi-condensed-medium;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0;
+}

@@ -1,0 +1,4 @@
+.hero__introduction {
+  @include text-preset-3;
+  color: $color-cyan-600;
+}
