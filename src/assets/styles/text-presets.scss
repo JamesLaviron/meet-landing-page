@@ -1,0 +1,41 @@
+@mixin barlow-semi-condensed-medium {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin barlow-semi-condensed-black {
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+@mixin text-preset-1 {
+  @include barlow-semi-condensed-black;
+  font-size: 64px;
+  line-height: 110%;
+  letter-spacing: 0;
+}
+
+@mixin text-preset-2 {
+  @include barlow-semi-condensed-black;
+  font-size: 40px;
+  line-height: 110%;
+  letter-spacing: 0;
+}
+
+@mixin text-preset-3 {
+  @include barlow-semi-condensed-black;
+  font-size: 16px;
+  line-height: 110%;
+  letter-spacing: 4px;
+}
+
+@mixin text-preset-4 {
+  @include barlow-semi-condensed-medium;
+  font-size: 18px;
+  line-height: 110%;
+  letter-spacing: 0;
+}
