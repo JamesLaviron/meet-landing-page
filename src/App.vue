@@ -12,6 +12,25 @@
   <body>
     <header class="content-header">
       <img
+        v-if="!isDesktop()"
+        class="content-header__image"
+        src="../public/images/tablet/image-hero.png"
+        alt="hero image"
+        aria-label="Group of people having meet"
+        width="820"
+        height="303"
+      />
+      <img
+        v-if="isDesktop()"
+        class="content-header__image"
+        src="../public/images/tablet/image-hero.png"
+        alt="hero image"
+        aria-label="Group of people having meet"
+        width="820"
+        height="303"
+      />
+      <img
+        v-if="isDesktop()"
         class="content-header__image"
         src="../public/images/tablet/image-hero.png"
         alt="hero image"
@@ -39,11 +58,10 @@
     </header>
     <main class="hero">
       <header class="hero__header">
-        <img
-          src="../images/logo-118x28.png"
-          alt="separator"
-          class="hero__separator"
-        />
+        <section class="separator hero__separator">
+          <div class="line hero__separator-line"></div>
+          <div class="circle hero__separator-circle"></div>
+        </section>
       </header>
       <section class="hero__image-container">
         <img
@@ -95,7 +113,7 @@
       <img
         src="../images/logo-118x28.png"
         alt="separator"
-        class="footer__separator"
+        class="separator footer__separator"
       />
     </header>
     <section class="footer__hero">
@@ -115,5 +133,10 @@ import "./assets/styles/main.scss";
 export default {
   name: "App",
   components: {},
+  methods: {
+    isDesktop() {
+      return window.innerWidth > 1024;
+    },
+  },
 };
 </script>

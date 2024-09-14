@@ -4,4 +4,14 @@
   gap: $spacing-200;
   justify-content: center;
   align-items: center;
+
+  @include tablet {
+    flex-direction: row;
+    flex-basis: 50%;
+  }
+
+  @include desktop {
+    flex-direction: row;
+    flex-basis: 50%;
+  }
 }

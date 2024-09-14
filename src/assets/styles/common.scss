@@ -28,4 +28,24 @@ body {
 
 .button-download {
   background-color: $color-cyan-600;
+
+  &:hover {
+    background-color: $color-cyan-900;
+  }
+}
+
+.circle {
+  width: 5.6rem;
+  height: 5.6rem;
+  border: 0.1rem solid $color-slate-300;
+  border-radius: 50%;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.line {
+  border-left: 0.1rem solid $color-slate-300;
+  height: 8rem;
 }

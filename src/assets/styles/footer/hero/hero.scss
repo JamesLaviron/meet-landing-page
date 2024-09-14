@@ -9,4 +9,8 @@
   background-image: url("../../../../../public/images/mobile/image-footer.jpg");
   background-size: cover;
   background-color: $color-cyan-700;
+
+  @include tablet {
+    flex-direction: row;
+  }
 }

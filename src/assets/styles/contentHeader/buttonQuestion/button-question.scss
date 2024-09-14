@@ -1,3 +1,7 @@
 .content-header__button-question {
   background-color: $color-purple-600;
+
+  &:hover {
+    background-color: $color-purple-900;
+  }
 }

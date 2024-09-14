@@ -1,4 +1,8 @@
 .content-header__image {
   width: 100%;
   object-fit: contain;
+
+  @include desktop {
+    width: 50%;
+  }
 }
