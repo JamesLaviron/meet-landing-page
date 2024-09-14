@@ -10,5 +10,6 @@
 
   @include desktop {
     gap: $spacing-400;
+    order: 2;
   }
 }
