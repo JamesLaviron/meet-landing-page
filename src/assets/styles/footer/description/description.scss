@@ -1,0 +1,7 @@
+.footer__description {
+  color: $color-white;
+
+  @include desktop {
+    width: 35.5rem;
+  }
+}

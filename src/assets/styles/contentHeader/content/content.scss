@@ -6,10 +6,12 @@
 
   @include tablet {
     gap: $spacing-300;
+    width: min-content;
   }
 
   @include desktop {
     gap: $spacing-400;
     order: 2;
+    width: min-content;
   }
 }

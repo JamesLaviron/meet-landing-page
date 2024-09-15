@@ -131,6 +131,12 @@ html,
 body {
   min-height: 100%;
 }
-body {
-  height: 100vh;
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: blue 1px auto;
 }

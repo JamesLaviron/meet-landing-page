@@ -1,0 +1,22 @@
+.footer__hero-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  color: #fff;
+  gap: $spacing-300;
+  text-align: center;
+  @include desktop {
+    flex-direction: row;
+  }
+
+  @include tablet {
+    width: 50.4rem;
+  }
+
+  @include desktop {
+    text-align: left;
+    align-items: flex-start;
+  }
+}

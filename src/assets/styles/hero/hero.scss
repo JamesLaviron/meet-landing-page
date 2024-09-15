@@ -1,0 +1,14 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: $spacing-800;
+  text-align: center;
+  padding: $spacing-400 $spacing-400 $spacing-800 $spacing-400;
+
+  @include tablet {
+    padding: $spacing-700 $spacing-400 $spacing-800 $spacing-400;
+  }
+}

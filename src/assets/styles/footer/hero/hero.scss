@@ -1,16 +1,19 @@
 .footer__hero {
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  color: #fff;
-  gap: $spacing-800;
-  padding: $spacing-800 $spacing-400;
-  text-align: center;
-  background-image: url("../../../../../public/images/mobile/image-footer.jpg");
+  justify-content: center;
   background-size: cover;
-  background-color: $color-cyan-700;
+  background-position: center;
+  background-image: linear-gradient(
+      to right,
+      hsla(192, 37%, 48%, 80%),
+      hsla(192, 37%, 48%, 80%)
+    ),
+    url("../../../public/images/tablet/image-footer.jpg");
+  grid-row: 2 / 4;
+  grid-column: 1 / 2;
+  padding: $spacing-800 $spacing-400;
 
-  @include tablet {
-    flex-direction: row;
+  @include desktop {
+    padding: $spacing-1400 $spacing-1000;
   }
 }

@@ -1,5 +1,5 @@
-@use "./hero/hero.scss";
-@use "./separator/separator";
-@use "./separator/circle/circle";
-@use "./separator/line/line";
-@use "./footer";
+@import "./hero/hero.scss";
+@import "./hero/inner/hero-inner";
+@import "./separator/separator";
+@import "./description/description";
+@import "./footer";

@@ -1,0 +1,12 @@
+.content-header__image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  height: 16rem;
+
+  @include tablet {
+    height: 30.3rem;
+  }
+}

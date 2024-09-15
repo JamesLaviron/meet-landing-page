@@ -1,9 +1,8 @@
 .content-header__image {
-  width: 100%;
-  object-fit: contain;
+  max-height: 100%;
+  width: auto;
 
   @include desktop {
-    width: 50%;
     &:nth-of-type(1) {
       order: 1;
     }

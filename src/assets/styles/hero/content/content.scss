@@ -1,0 +1,16 @@
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: $spacing-400;
+  height: 100%;
+
+  @include tablet {
+    maw-width: 50.4rem;
+  }
+
+  @include desktop {
+    max-width: 50.4rem;
+  }
+}

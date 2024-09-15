@@ -1,15 +1,14 @@
 .hero__image-container {
-  display: flex;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
   width: 100%;
-  flex-wrap: wrap;
   gap: $spacing-200;
-  flex-basis: 50%;
 
   @include tablet {
-    flex-basis: 25%;
+    grid-template: 1fr / repeat(4, 1fr);
   }
 
   @include desktop {
-    flex-basis: 25%;
+    grid-template: 1fr / repeat(4, 1fr);
   }
 }

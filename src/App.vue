@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <img
-      src="../images/logo-118x28.png"
+      src="/images/logo-118x28.png"
       alt="logo"
       aria-label="Meet logo"
       class="logo header__logo"
@@ -11,61 +11,56 @@
   </header>
   <body>
     <header class="content-header">
+      <div v-if="!isDesktop()" class="content-header__image-container">
+        <img
+          class="content-header__image"
+          src="/images/tablet/image-hero.png"
+          alt="hero image"
+          aria-label="Group of people having meet"
+          width="820"
+          height="303"
+        />
+      </div>
       <img
-        v-if="!isDesktop()"
+        v-if="isDesktop()"
         class="content-header__image"
-        src="../public/images/tablet/image-hero.png"
+        src="/images/desktop/image-hero-left.png"
         alt="hero image"
-        aria-label="Group of people having meet"
+        aria-label="Group of people having meet left"
         width="820"
         height="303"
       />
       <img
         v-if="isDesktop()"
         class="content-header__image"
-        src="../public/images/tablet/image-hero.png"
+        src="/images/desktop/image-hero-right.png"
         alt="hero image"
-        aria-label="Group of people having meet"
-        width="820"
-        height="303"
-      />
-      <img
-        v-if="isDesktop()"
-        class="content-header__image"
-        src="../public/images/tablet/image-hero.png"
-        alt="hero image"
-        aria-label="Group of people having meet"
+        aria-label="Group of people having meet right"
         width="820"
         height="303"
       />
       <section class="content-header__content">
-        <h1 class="title content__header__title">Group Chat for Everyone</h1>
+        <h1 class="title content-header__title">Group Chat for Everyone</h1>
         <p class="description content-header__description">
           Meet makes it easy to connect with others face-to-face virtually and
           collaborate across any device.
         </p>
         <section class="content-header__buttons-container">
-          <button
-            class="button button-download content-header__button-download"
-          >
-            Download v1.3
+          <button class="button button-download">
+            Download <span class="button-download__version">v1.3</span>
           </button>
-          <button class="button content-header__button-question">
-            What is it?
-          </button>
+          <button class="button button--purple">What is it?</button>
         </section>
       </section>
     </header>
     <main class="hero">
-      <header class="hero__header">
-        <section class="separator hero__separator">
-          <div class="line hero__separator-line"></div>
-          <div class="circle hero__separator-circle"></div>
-        </section>
-      </header>
+      <section class="separator hero__separator">
+        <div class="line"></div>
+        <div class="circle">01</div>
+      </section>
       <section class="hero__image-container">
         <img
-          src="../public/images/desktop/image-woman-in-videocall.jpg"
+          src="/images/desktop/image-woman-in-videocall.jpg"
           alt="hero image"
           aria-label="Woman having meet using laptop"
           class="hero__image"
@@ -73,7 +68,7 @@
           height="500"
         />
         <img
-          src="../public/images/desktop/image-women-videochatting.jpg"
+          src="/images/desktop/image-women-videochatting.jpg"
           alt="hero image"
           aria-label="Womens having meet using phone"
           class="hero__image"
@@ -81,7 +76,7 @@
           height="500"
         />
         <img
-          src="../public/images/desktop/image-men-in-meeting.jpg"
+          src="/images/desktop/image-men-in-meeting.jpg"
           alt="hero image"
           aria-label="Man having meet using laptop"
           class="hero__image"
@@ -89,7 +84,7 @@
           height="500"
         />
         <img
-          src="../public/images/desktop/image-man-texting.jpg"
+          src="/images/desktop/image-man-texting.jpg"
           alt="hero image"
           aria-label="Man having meet using phone"
           class="hero__image"
@@ -98,8 +93,12 @@
         />
       </section>
       <section class="hero__content">
-        <p class="hero__introduction">Built for modern use</p>
-        <h2 class="title hero__subtitle">Smarter meetings, all in one place</h2>
+        <header class="hero__content-header">
+          <p class="hero__introduction">Built for modern use</p>
+          <h2 class="descriptiontitle hero__subtitle">
+            Smarter meetings, all in one place
+          </h2>
+        </header>
         <p class="description hero__description">
           Send messages, share files, show your screen, and record your meetings
           — all in one workspace. Control who can join with invite-only team
@@ -109,22 +108,21 @@
     </main>
   </body>
   <footer class="footer">
-    <header class="footer__header">
-      <img
-        src="../images/logo-118x28.png"
-        alt="separator"
-        class="separator footer__separator"
-      />
-    </header>
+    <section class="separator footer__separator">
+      <div class="line"></div>
+      <div class="circle">02</div>
+    </section>
     <section class="footer__hero">
-      <h2 class="footer__title">Experience more together</h2>
-      <p class="description footer__description">
-        Stay connected with reliable HD meetings and unlimited one-on-one and
-        group video sessions.
-      </p>
-      <button class="button button-download footer__button">
-        Download v1.3
-      </button>
+      <div class="footer__hero-inner">
+        <h2 class="footer__title">Experience more together</h2>
+        <p class="description footer__description">
+          Stay connected with reliable HD meetings and unlimited one-on-one and
+          group video sessions.
+        </p>
+        <button class="button-download footer__button button--purple">
+          Download <span class="button-download__version">v1.3</span>
+        </button>
+      </div>
     </section>
   </footer>
 </template>

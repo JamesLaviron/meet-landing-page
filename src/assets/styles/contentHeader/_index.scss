@@ -1,6 +1,6 @@
-@use "./buttonDownload/button-download";
-@use "./buttonQuestion/button-question";
-@use "./buttonsContainer/buttons-container";
-@use "./content/content";
-@use "./image/image";
-@use "./content-header";
+@import "./buttonsContainer/buttons-container";
+@import "./content/content";
+@import "./title/title";
+@import "./image/image";
+@import "./content-header";
+@import "./imageContainer/image-container";
