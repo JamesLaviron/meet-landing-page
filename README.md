@@ -1,6 +1,6 @@
-# Frontend Mentor - Product preview card component solution
+# Frontend Mentor - Meet landing page solution
 
-This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Meet landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/meet-landing-page-rbTDS6OUR). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -25,6 +25,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 Users should be able to:
 
 - View the optimal layout depending on their device's screen size
+- See hover states for interactive elements
 
 ### Screenshot
 
@@ -38,7 +39,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [here](https://www.frontendmentor.io/solutions/responsive-testimonials-using-grid-wJWiGYZN6K)
+- Solution URL: [here](https://www.frontendmentor.io/solutions/meet-landing-page-wJWiGYZN6K)
 - Live Site URL: [here](https://jameslaviron.github.io/meet-landing-page/)
 
 ## My process
@@ -46,27 +47,48 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- SASS
-- BEM methodology
+- CSS custom properties
 - Flexbox
 - CSS Grid
-- CSS mixins
+- Mobile-first workflow
+- BEM methodology
+- Github Copilot
 - [Vue](https://vuejs.org/) - JS library
-- CSS Logical properties
-- Reset file
 
 ### What I learned
 
-I learned how to work with mixins in order to easily use them inside my code. I learned how and when to create modifiers.
+I learned how to use `@use` instead of `@import` in order to optimize loaded css. If you got feedbacks on that subject, I would be more than happy.
+
+I also learned how to use mixin functions in order to avoid code duplicates for desktop/tablet
+
+```css
+@mixin responsive($devices...) {
+  @each $device in $devices {
+    @if $device == "desktop" {
+      @include desktop {
+        @content;
+      }
+    } @else if $device == "tablet" {
+      @include tablet {
+        @content;
+      }
+    } @else if $device == "mobile" {
+      @include mobile {
+        @content;
+      }
+    }
+  }
+}
+```
 
 ### Continued development
 
-I now want to know how to work properly with framework and improve my speed. I also would like to understand more BEM needs. I would love if you give feedbacks on the way I used BEm here both for modifiers and file tree.
+I would like to focus on improving semantic html and sass related skills
 
 ### Useful resources
 
+- [Grid cheat sheet](https://grid.malven.co/) - This helped me to keep track of grid properties.
 - [BEM cheat sheet](https://bem-cheat-sheet.9elements.com/) - This helped me to understand BEM methodology.
-- [BEM article](https://sparkbox.com/foundry/bem_by_example) - Nice article usefull to understand BEM.
 
 ### Author
 
