@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <img
-      src="/images/logo-118x28.png"
+      src="./assets/images/logo-118x28.png"
       alt="logo"
       aria-label="Meet logo"
       class="header__logo"
@@ -14,7 +14,7 @@
       <div v-if="!isDesktop()" class="content-header__image-container">
         <img
           class="content-header__image"
-          src="/images/tablet/image-hero.png"
+          src="./assets/images/tablet/image-hero.png"
           alt="hero image"
           aria-label="Group of people having meet"
           width="820"
@@ -24,7 +24,7 @@
       <img
         v-if="isDesktop()"
         class="content-header__image"
-        src="/images/desktop/image-hero-left.png"
+        src="./assets/images/desktop/image-hero-left.png"
         alt="hero image"
         aria-label="Group of people having meet left"
         width="820"
@@ -33,7 +33,7 @@
       <img
         v-if="isDesktop()"
         class="content-header__image"
-        src="/images/desktop/image-hero-right.png"
+        src="./assets/images/desktop/image-hero-right.png"
         alt="hero image"
         aria-label="Group of people having meet right"
         width="820"
@@ -60,7 +60,7 @@
       </section>
       <section class="hero__image-container">
         <img
-          src="/images/desktop/image-woman-in-videocall.jpg"
+          src="./assets/images/desktop/image-woman-in-videocall.jpg"
           alt="hero image"
           aria-label="Woman having meet using laptop"
           class="hero__image"
@@ -68,7 +68,7 @@
           height="500"
         />
         <img
-          src="/images/desktop/image-women-videochatting.jpg"
+          src="./assets/images/desktop/image-women-videochatting.jpg"
           alt="hero image"
           aria-label="Womens having meet using phone"
           class="hero__image"
@@ -76,7 +76,7 @@
           height="500"
         />
         <img
-          src="/images/desktop/image-men-in-meeting.jpg"
+          src="./assets/images/desktop/image-men-in-meeting.jpg"
           alt="hero image"
           aria-label="Man having meet using laptop"
           class="hero__image"
@@ -84,7 +84,7 @@
           height="500"
         />
         <img
-          src="/images/desktop/image-man-texting.jpg"
+          src="./assets/images/desktop/image-man-texting.jpg"
           alt="hero image"
           aria-label="Man having meet using phone"
           class="hero__image"
