@@ -1,3 +1,6 @@
+@use "../../_mixins" as *;
+@use "../../_variables" as *;
+
 .content-header__image-container {
   display: flex;
   justify-content: center;

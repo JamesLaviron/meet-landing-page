@@ -1,3 +1,6 @@
+@use "../../_mixins" as *;
+@use "../../_variables" as *;
+
 .content-header__content {
   display: flex;
   flex-direction: column;

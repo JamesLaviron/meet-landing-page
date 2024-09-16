@@ -7,13 +7,13 @@ module.exports = defineConfig({
     loaderOptions: {
       scss: {
         additionalData: `
-          @import "@/assets/styles/_reset.scss";
-          @import "@/assets/styles/base.scss";
-          @import "@/assets/styles/_variables.scss";
-          @import "@/assets/styles/_utilities.scss";
-          @import "@/assets/styles/_mixins.scss";
-          @import "@/assets/styles/text-presets.scss";
-          @import "@/assets/styles/common.scss";
+          @use "@/assets/styles/_reset.scss";
+          @use "@/assets/styles/base.scss";
+          @use "@/assets/styles/_variables.scss";
+          @use "@/assets/styles/_utilities.scss";
+          @use "@/assets/styles/_mixins.scss";
+          @use "@/assets/styles/text-presets.scss";
+          @use "@/assets/styles/common.scss";
         `
       }
     }

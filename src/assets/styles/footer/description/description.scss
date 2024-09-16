@@ -1,3 +1,6 @@
+@use "../../_mixins" as *;
+@use "../../_variables" as *;
+
 .footer__description {
   color: $color-white;
 

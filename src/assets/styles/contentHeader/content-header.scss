@@ -1,3 +1,6 @@
+@use "../_mixins" as *;
+@use "../_variables" as *;
+
 .content-header {
   display: flex;
   width: 100%;

@@ -1,3 +1,5 @@
+@use "../../_mixins" as *;
+
 .content-header__title {
   @include responsive("desktop", "tablet") {
     width: 44.8rem;

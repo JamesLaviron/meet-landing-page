@@ -1,3 +1,6 @@
+@use "../_variables" as *;
+@use "../text-presets" as *;
+
 .description {
   color: $color-slate-600;
   @include text-preset-4;

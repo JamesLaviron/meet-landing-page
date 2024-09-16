@@ -1,3 +1,6 @@
+@use "./variables.scss" as *;
+@use "text-presets.scss" as *;
+
 h1 {
   color: $color-slate-900;
   @include text-preset-1;

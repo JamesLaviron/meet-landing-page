@@ -1,3 +1,6 @@
+@use "../../_variables" as *;
+@use "../../text-presets" as *;
+
 .hero__introduction {
   color: $color-cyan-600;
   text-transform: uppercase;

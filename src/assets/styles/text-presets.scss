@@ -1,3 +1,5 @@
+@use "./_mixins.scss" as *;
+
 @mixin barlow-semi-condensed-medium {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-optical-sizing: auto;

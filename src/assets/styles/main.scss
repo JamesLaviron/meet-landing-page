@@ -1,7 +1,7 @@
-@import "./button/";
-@import "./contentHeader/";
-@import "./description/";
-@import "./footer/";
-@import "./header/";
-@import "./hero/";
-@import "./separator/";
+@use "./button/" as button;
+@use "./contentHeader/" as contentHeader;
+@use "./description/" as description;
+@use "./footer/" as footer;
+@use "./header/" as header;
+@use "./hero/" as hero;
+@use "./separator/" as separator;
