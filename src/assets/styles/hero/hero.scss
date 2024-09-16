@@ -14,4 +14,8 @@
   @include tablet {
     padding: $spacing-700 $spacing-400 $spacing-800 $spacing-400;
   }
+
+  @include desktop {
+    padding: $spacing-700 $spacing-1000 $spacing-900 $spacing-1000;
+  }
 }

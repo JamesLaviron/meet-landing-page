@@ -8,7 +8,7 @@
   justify-content: center;
   align-items: center;
   gap: $spacing-600;
-  padding: $spacing-400 $spacing-450 $spacing-800 $spacing-450;
+  //   padding: $spacing-400 $spacing-450 $spacing-800 $spacing-450;
 
   @include tablet {
     gap: $spacing-900;

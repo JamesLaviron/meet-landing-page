@@ -1,9 +1,8 @@
 @use "../_variables" as *;
 
-.header {
+header {
   display: flex;
   width: 100%;
   justify-content: center;
-  padding: $spacing-600 $spacing-1000 0 $spacing-1000;
   background-color: $color-white;
 }

@@ -1,7 +1,12 @@
 @use "../../_variables" as *;
+@use "../../_mixins" as *;
 
 .hero__content-header {
   display: flex;
   flex-direction: column;
   gap: $spacing-200;
+
+  @include responsive("tablet", "desktop") {
+    padding: $spacing-600 $spacing-1000 0 $spacing-1000;
+  }
 }

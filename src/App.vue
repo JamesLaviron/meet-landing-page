@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header class="page-header">
     <img
       src="./assets/images/logo-118x28.png"
       alt="logo"
@@ -9,9 +9,9 @@
       height="28"
     />
   </header>
-  <body>
+  <main>
     <header class="content-header">
-      <div v-if="!isDesktop()" class="content-header__image-container">
+      <figure v-if="!isDesktop()" class="content-header__image-container">
         <img
           class="content-header__image"
           src="./assets/images/tablet/image-hero.png"
@@ -20,25 +20,27 @@
           width="820"
           height="303"
         />
-      </div>
-      <img
-        v-if="isDesktop()"
-        class="content-header__image"
-        src="./assets/images/desktop/image-hero-left.png"
-        alt="hero image"
-        aria-label="Group of people having meet left"
-        width="820"
-        height="303"
-      />
-      <img
-        v-if="isDesktop()"
-        class="content-header__image"
-        src="./assets/images/desktop/image-hero-right.png"
-        alt="hero image"
-        aria-label="Group of people having meet right"
-        width="820"
-        height="303"
-      />
+      </figure>
+      <figure v-if="isDesktop()" class="content-header__image-container">
+        <img
+          class="content-header__image"
+          src="./assets/images/desktop/image-hero-left.png"
+          alt="hero image"
+          aria-label="Group of people having meet left"
+          width="820"
+          height="303"
+        />
+      </figure>
+      <figure v-if="isDesktop()" class="content-header__image-container">
+        <img
+          class="content-header__image"
+          src="./assets/images/desktop/image-hero-right.png"
+          alt="hero image"
+          aria-label="Group of people having meet right"
+          width="820"
+          height="303"
+        />
+      </figure>
       <section class="content-header__content">
         <h1 class="title content-header__title">Group Chat for Everyone</h1>
         <p class="description">
@@ -53,44 +55,52 @@
         </section>
       </section>
     </header>
-    <main class="hero">
+    <article class="hero">
       <section class="separator">
         <div class="separator__line"></div>
         <div class="separator__circle">01</div>
       </section>
       <section class="hero__image-container">
-        <img
-          src="./assets/images/desktop/image-woman-in-videocall.jpg"
-          alt="hero image"
-          aria-label="Woman having meet using laptop"
-          class="hero__image"
-          width="500"
-          height="500"
-        />
-        <img
-          src="./assets/images/desktop/image-women-videochatting.jpg"
-          alt="hero image"
-          aria-label="Womens having meet using phone"
-          class="hero__image"
-          width="500"
-          height="500"
-        />
-        <img
-          src="./assets/images/desktop/image-men-in-meeting.jpg"
-          alt="hero image"
-          aria-label="Man having meet using laptop"
-          class="hero__image"
-          width="500"
-          height="500"
-        />
-        <img
-          src="./assets/images/desktop/image-man-texting.jpg"
-          alt="hero image"
-          aria-label="Man having meet using phone"
-          class="hero__image"
-          width="500"
-          height="500"
-        />
+        <figure class="content-header__image-container">
+          <img
+            src="./assets/images/desktop/image-woman-in-videocall.jpg"
+            alt="hero image"
+            aria-label="Woman having meet using laptop"
+            class="hero__image"
+            width="500"
+            height="500"
+          />
+        </figure>
+        <figure class="content-header__image-container">
+          <img
+            src="./assets/images/desktop/image-women-videochatting.jpg"
+            alt="hero image"
+            aria-label="Womens having meet using phone"
+            class="hero__image"
+            width="500"
+            height="500"
+          />
+        </figure>
+        <figure class="content-header__image-container">
+          <img
+            src="./assets/images/desktop/image-men-in-meeting.jpg"
+            alt="hero image"
+            aria-label="Man having meet using laptop"
+            class="hero__image"
+            width="500"
+            height="500"
+          />
+        </figure>
+        <figure class="content-header__image-container">
+          <img
+            src="./assets/images/desktop/image-man-texting.jpg"
+            alt="hero image"
+            aria-label="Man having meet using phone"
+            class="hero__image"
+            width="500"
+            height="500"
+          />
+        </figure>
       </section>
       <section class="hero__content">
         <header class="hero__content-header">
@@ -103,8 +113,8 @@
           access, data encryption, and data export.
         </p>
       </section>
-    </main>
-  </body>
+    </article>
+  </main>
   <footer class="footer">
     <section class="separator footer__separator">
       <div class="separator__line"></div>

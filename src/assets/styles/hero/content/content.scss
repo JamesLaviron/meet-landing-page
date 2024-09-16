@@ -9,11 +9,7 @@
   gap: $spacing-400;
   height: 100%;
 
-  @include tablet {
-    maw-width: 50.4rem;
-  }
-
-  @include desktop {
-    max-width: 50.4rem;
+  @include responsive("tablet", "desktop") {
+    max-width: 54.4rem;
   }
 }

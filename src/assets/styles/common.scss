@@ -1,6 +1,10 @@
 @use "./variables.scss" as *;
 @use "text-presets.scss" as *;
 
+body {
+  background-color: $color-white;
+}
+
 h1 {
   color: $color-slate-900;
   @include text-preset-1;
@@ -10,11 +14,12 @@ h2 {
   @include text-preset-2;
 }
 
-body {
+main {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: $color-white;
-  max-width: 150rem;
+  //   max-width: 150rem;
   overflow-x: hidden;
+  max-width: 126rem;
+  margin: auto;
 }

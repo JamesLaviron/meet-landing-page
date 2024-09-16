@@ -39,7 +39,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [here](https://www.frontendmentor.io/solutions/meet-landing-page-wJWiGYZN6K)
+- Solution URL: [here](https://www.frontendmentor.io/challenges/meet-landing-page-rbTDS6OUR/)
 - Live Site URL: [here](https://jameslaviron.github.io/meet-landing-page/)
 
 ## My process
