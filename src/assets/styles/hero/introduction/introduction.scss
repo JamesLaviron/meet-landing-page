@@ -1,4 +1,5 @@
 .hero__introduction {
   color: $color-cyan-600;
+  text-transform: uppercase;
   @include text-preset-3;
 }

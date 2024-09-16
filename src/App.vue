@@ -95,9 +95,7 @@
       <section class="hero__content">
         <header class="hero__content-header">
           <p class="hero__introduction">Built for modern use</p>
-          <h2 class="description hero__subtitle">
-            Smarter meetings, all in one place
-          </h2>
+          <h2 class="hero__subtitle">Smarter meetings, all in one place</h2>
         </header>
         <p class="description">
           Send messages, share files, show your screen, and record your meetings

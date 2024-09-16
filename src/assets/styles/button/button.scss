@@ -4,4 +4,13 @@
   color: $color-white;
   width: max-content;
   @include text-preset-5;
+  background-color: $color-cyan-600;
+
+  &:hover {
+    background-color: $color-cyan-900;
+  }
+
+  & .version {
+    color: $color-cyan-300;
+  }
 }
