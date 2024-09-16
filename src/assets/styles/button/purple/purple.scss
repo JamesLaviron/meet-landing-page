@@ -1,0 +1,11 @@
+.button--purple {
+  background-color: $color-purple-600;
+
+  &:hover {
+    background-color: $color-purple-900;
+  }
+
+  & .version {
+    color: $color-purple-300;
+  }
+}

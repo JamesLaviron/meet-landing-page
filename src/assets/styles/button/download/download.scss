@@ -1,0 +1,15 @@
+.button--download {
+  background-color: $color-cyan-600;
+
+  &__version {
+    color: $color-purple-300;
+  }
+
+  &:hover {
+    background-color: $color-cyan-900;
+  }
+
+  & .version {
+    color: $color-cyan-300;
+  }
+}

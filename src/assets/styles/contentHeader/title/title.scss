@@ -1,5 +1,5 @@
 .content-header__title {
-  @include tablet {
+  @include responsive("desktop", "tablet") {
     width: 44.8rem;
   }
 }

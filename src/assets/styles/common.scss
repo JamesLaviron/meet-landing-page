@@ -3,19 +3,6 @@ h1 {
   @include text-preset-1;
 }
 
-.description {
-  color: $color-slate-600;
-  @include text-preset-4;
-}
-
-button {
-  padding: $spacing-200 $spacing-500;
-  border-radius: 2.9rem;
-  color: $color-white;
-  width: max-content;
-  @include text-preset-5;
-}
-
 h2 {
   @include text-preset-2;
 }
@@ -27,64 +14,4 @@ body {
   background-color: $color-white;
   max-width: 150rem;
   overflow-x: hidden;
-}
-
-.button-download {
-  background-color: $color-cyan-600;
-
-  &__version {
-    color: $color-purple-300;
-  }
-
-  &:hover {
-    background-color: $color-cyan-900;
-  }
-
-  &.button--purple > .button-download__version {
-    color: $color-purple-300;
-  }
-
-  & > .button-download__version {
-    color: $color-cyan-300;
-  }
-}
-
-.circle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 5.6rem;
-  border: 0.1rem solid $color-slate-300;
-  border-radius: 50%;
-  width: 5.6rem;
-  color: $color-slate-600;
-  z-index: 2;
-  background-color: $color-white;
-  @include text-preset-5;
-}
-
-.line {
-  border-left: 0.1rem solid $color-slate-300;
-  height: 8rem;
-  width: 0.1rem;
-}
-
-.separator {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.button--purple {
-  background-color: $color-purple-600;
-
-  &:hover {
-    background-color: $color-purple-900;
-  }
-}
-
-.span--purple {
-  color: $color-purple-300;
 }

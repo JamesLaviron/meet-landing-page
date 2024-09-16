@@ -4,7 +4,7 @@
       src="/images/logo-118x28.png"
       alt="logo"
       aria-label="Meet logo"
-      class="logo header__logo"
+      class="header__logo"
       width="118"
       height="28"
     />
@@ -41,22 +41,22 @@
       />
       <section class="content-header__content">
         <h1 class="title content-header__title">Group Chat for Everyone</h1>
-        <p class="description content-header__description">
+        <p class="description">
           Meet makes it easy to connect with others face-to-face virtually and
           collaborate across any device.
         </p>
         <section class="content-header__buttons-container">
-          <button class="button button-download">
-            Download <span class="button-download__version">v1.3</span>
+          <button class="button button--download">
+            Download <span class="version">v1.3</span>
           </button>
           <button class="button button--purple">What is it?</button>
         </section>
       </section>
     </header>
     <main class="hero">
-      <section class="separator hero__separator">
-        <div class="line"></div>
-        <div class="circle">01</div>
+      <section class="separator">
+        <div class="separator__line"></div>
+        <div class="separator__circle">01</div>
       </section>
       <section class="hero__image-container">
         <img
@@ -95,11 +95,11 @@
       <section class="hero__content">
         <header class="hero__content-header">
           <p class="hero__introduction">Built for modern use</p>
-          <h2 class="descriptiontitle hero__subtitle">
+          <h2 class="description hero__subtitle">
             Smarter meetings, all in one place
           </h2>
         </header>
-        <p class="description hero__description">
+        <p class="description">
           Send messages, share files, show your screen, and record your meetings
           — all in one workspace. Control who can join with invite-only team
           access, data encryption, and data export.
@@ -109,18 +109,18 @@
   </body>
   <footer class="footer">
     <section class="separator footer__separator">
-      <div class="line"></div>
-      <div class="circle">02</div>
+      <div class="separator__line"></div>
+      <div class="separator__circle">02</div>
     </section>
     <section class="footer__hero">
       <div class="footer__hero-inner">
-        <h2 class="footer__title">Experience more together</h2>
+        <h2>Experience more together</h2>
         <p class="description footer__description">
           Stay connected with reliable HD meetings and unlimited one-on-one and
           group video sessions.
         </p>
-        <button class="button-download footer__button button--purple">
-          Download <span class="button-download__version">v1.3</span>
+        <button class="button button--download button--purple">
+          Download <span class="version">v1.3</span>
         </button>
       </div>
     </section>

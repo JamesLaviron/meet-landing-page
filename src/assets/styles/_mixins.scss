@@ -19,3 +19,21 @@
     @content;
   }
 }
+
+@mixin responsive($devices...) {
+  @each $device in $devices {
+    @if $device == "desktop" {
+      @include desktop {
+        @content;
+      }
+    } @else if $device == "tablet" {
+      @include tablet {
+        @content;
+      }
+    } @else if $device == "mobile" {
+      @include mobile {
+        @content;
+      }
+    }
+  }
+}

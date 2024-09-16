@@ -1,11 +1,7 @@
 .hero__subtitle {
   color: $color-slate-900;
 
-  @include tablet {
-    width: 44.5rem;
-  }
-
-  @include desktop {
-    width: 44.5rem;
+  @include responsive("desktop", "tablet") {
+    max-width: 44.5rem;
   }
 }

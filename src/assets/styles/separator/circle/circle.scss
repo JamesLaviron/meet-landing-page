@@ -1,0 +1,13 @@
+.separator__circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5.6rem;
+  width: 5.6rem;
+  border: 0.1rem solid $color-slate-300;
+  border-radius: 50%;
+  color: $color-slate-600;
+  z-index: 2;
+  background-color: $color-white;
+  @include text-preset-5;
+}

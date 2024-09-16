@@ -3,11 +3,7 @@
   justify-content: center;
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(
-      to right,
-      hsla(192, 37%, 48%, 80%),
-      hsla(192, 37%, 48%, 80%)
-    ),
+  background-image: linear-gradient(to right, $color-cyan-800, $color-cyan-800),
     url("../../../public/images/tablet/image-footer.jpg");
   grid-row: 2 / 4;
   grid-column: 1 / 2;

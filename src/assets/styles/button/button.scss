@@ -1,0 +1,7 @@
+.button {
+  padding: $spacing-200 $spacing-500;
+  border-radius: 2.9rem;
+  color: $color-white;
+  width: max-content;
+  @include text-preset-5;
+}
